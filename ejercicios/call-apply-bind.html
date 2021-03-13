@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function.prototype.call, Function.prototype.apply, Function.prototype.bind
+    </title>
+</head>
+<body>
+    <a href="/ejercicios/">Go back</a>
+    <p><em>Abre la consola</em></p>
+
+    <ul>
+      <li><button class="call-to-action">Aprender</button></li>
+      <li><button class="call-to-action">Aprender Más</button></li>
+      <li><button class="call-to-action">¡Nunca parar de Aprender!</button></li>
+    </ul>
+
+    <script>
+        //establece this usando call
+        function saludar() {
+            console.log(`Hola, soy ${this.name} ${this.lastName}`);
+        }
+        const hector = {
+            name: "Hector",
+            lastName: "Moreira"
+        }
+        saludar.call(hector);
+
+        //establece this usando call y pasar argumentos
+        function caminar(metros, direccion) {
+            console.log(`${this.name} camina ${metros} metros hacia el ${direccion}`)
+        }
+        caminar.call(hector,200,"sur")
+
+        //establece this usando apply y pasar argumentos
+        const valores = [600,"noreste"];
+        caminar.apply(hector,valores)
+
+        /*
+            Call - pasamos argumentos con comas
+            Apply - pasamos argumentos con un arreglo
+        */
+
+        // //establece this en nueva function usando bind
+        const din = {name: "Din", lastName: "Djarin"};
+        const dinSaluda = saludar.bind(din);
+        dinSaluda();
+        //curring
+        const dinCamina = caminar.bind(din, 1000);
+        dinCamina('oeste');
+
+        //Cuándo es util usar todos
+        const buttons = document.getElementsByClassName('call-to-action');
+        // buttons.forEach(button => {
+        //     button.onClick = () => alert('Nunca pares de aprender');
+        // });
+
+        //button is nodeList
+        Array.prototype.forEach.call(buttons, button => {
+             button.onclick = () => alert('Nunca pares de aprender');
+        });
+
+        
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "platzi-media-player",
+  "version": "1.0.0",
+  "description": "Proyecto del [Curso profesional de JavaScript](https://platzi.com/clases/javascript-profesional/) en Platzi",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectormoreira/platzi-pro-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hectormoreira/platzi-pro-javascript/issues"
+  },
+  "homepage": "https://github.com/hectormoreira/platzi-pro-javascript#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
