@@ -11,7 +11,8 @@ npm i -D live-server
 ```
 
 ## Conceptos
-- El **Scope** o ámbito es lo que define el tiempo de vida de una variable, en que partes de nuestro código pueden ser usadas.
+### Scope
+Scope o ámbito es lo que define el tiempo de vida de una variable, en que partes de nuestro código pueden ser usadas.
 ### Global Scope
 Variables disponibles de forma global se usa la palabra var, son accesibles por todos los scripts que se cargan en la página. Aquí hay mucho riesgo de sobreescritura.
 ### Function Scope
@@ -103,7 +104,25 @@ Estas propiedades al ser funciones pueden llevar una validación de por medio y 
 ### Proxy
 El proxy sirve para interceptar la lectura de propiedades de un objeto (los get, y set) entre muchas otras funciones. Así, antes de que la llamada llegue al objeto podemos manipularla con una lógica que nosotros definamos.
 
+### Generators
+Los generadores son funciones especiales, pueden pausar su ejecución y luego volver al punto donde se quedaron recordando su scope.
 
+**Algunas de sus características:**
+
+- Los generadores regresan una función.
+- Empiezan suspendidos y se tiene que llamar next para que ejecuten.
+- Regresan un value y un boolean done que define si ya terminaron.
+- yield es la instrucción que regresa un valor cada vez que llamamos a next y detiene la ejecución del generador.
+
+### Fetch - Cómo cancelar peticiones
+La peticiones AJAX permitieron en su tiempo hacer peticiones asíncronas al servidor sin tener que detener la carga de la página. Hoy en día se utiliza la función **fetch** para esto.
+
+Con **fetch** tenemos algo llamado **AbortController** que nos permite enviar una señal a una petición en plena ejecución para detenerla.
+
+### IntersectionObserver
+Sirve para observar elementos y si cruzan un umbral que nosotros definimos nos lo va a notificar para tomar acción.
+
+El umbral se define por el porcentaje que tiene intersección con el viewport, con la parte visible de nuestra página.
 
 ## Recursos
 - [AST Explorer](https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/d9cc7988c2c743d7edfbb3c3b1abed866c975ee4)
