@@ -4,7 +4,7 @@ import AutoPause from './plugins/AutoPause.js';
 
 const video = document.querySelector("video");
 const buttonPlayPause = document.querySelector("#playPause");
-const buttonMuteUmute = document.querySelector("#muteUnmute");
+const buttonMuteUnmute = document.querySelector("#muteUnmute");
 
 const player = new MediaPlayer({ el: video, plugins: [
   new AutoPlay(),
@@ -12,4 +12,10 @@ const player = new MediaPlayer({ el: video, plugins: [
 ] });
 
 buttonPlayPause.onclick = () => player.togglePlay();
-buttonMuteUmute.onclick = () => player.toggleMute();
+buttonMuteUnmute.onclick = () => player.toggleMute();
+
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js').catch(error => {
+    console.log(error);
+  });
+}

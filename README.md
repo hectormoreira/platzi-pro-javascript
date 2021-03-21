@@ -124,6 +124,23 @@ Sirve para observar elementos y si cruzan un umbral que nosotros definimos nos l
 
 El umbral se define por el porcentaje que tiene intersección con el viewport, con la parte visible de nuestra página.
 
+### VisibilityChange
+El **visibilityChange** forma parte del API del DOM llamado **Page Visibility** y nos deja saber si el elemento es visible, pude ser usado para ejecutar una acción cuando cambiamos de pestaña. Así podemos ahorrar batería y mejorar la UX.
+
+### Service Workers
+Sirven para hacer que nuestras aplicaciones funcionen Offline.
+
+Muy usados en las **Progressive Web Apps** (PWA) los ServiceWorkers son una capa que vive entre el navegador y el Internet.
+
+Parecido a como lo hacen los proxys van a interceptar peticiones para guardar el resultado en cache y la próxima vez que se haga la petición tomar del cache ese resultado.
+
+## TypeScript - Introducción
+**TypeScript** es un superset de JavaScript que añade tipos a nuestras variables ayudando así a la detección de errores de forma temprana y mejorando el autocompletado.
+
+Los navegadores no entienden TypeScript así que lo vamos a transpilar a JavaScript usando Parcel.
+
+
+
 ## Recursos
 - [AST Explorer](https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/d9cc7988c2c743d7edfbb3c3b1abed866c975ee4)
 - [ASLint](https://eslint.org/)
