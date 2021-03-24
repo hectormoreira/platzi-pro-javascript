@@ -144,3 +144,13 @@ Los navegadores no entienden TypeScript así que lo vamos a transpilar a JavaScr
 ## Recursos
 - [AST Explorer](https://astexplorer.net/#/gist/16fc27fc420f705455f2b42b6c804aa1/d9cc7988c2c743d7edfbb3c3b1abed866c975ee4)
 - [ASLint](https://eslint.org/)
+
+### Dependencias
+```sh
+npm install -D parcel-bundler
+npm rm live-server
+```
+
+```
+rm -rf .cache dist
+```

@@ -4,20 +4,24 @@
   "description": "Proyecto del [Curso profesional de JavaScript](https://platzi.com/clases/javascript-profesional/) en Platzi",
   "main": "index.js",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hectormoreira/platzi-pro-javascript.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Hector Hugo Moreira",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/hectormoreira/platzi-pro-javascript/issues"
   },
   "homepage": "https://github.com/hectormoreira/platzi-pro-javascript#readme",
   "devDependencies": {
-    "live-server": "^1.2.1"
-  }
+    "parcel-bundler": "^1.12.5",
+    "typescript": "^4.2.3"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
 }
