@@ -158,6 +158,41 @@ Nos permiten declarar la forma exacta de un objeto, definiendo los tipos de sus 
 ### Clases
 En las clases en TypeScript sí existen las propiedades privadas.
 
+## Patrones de diseño
+Son soluciones generales ya probadas dentro de un contexto que las limita a problemas frecuentes que nos encontramos en el desarrollo de software.
+
+### Categorías de patrones de diseño
+- **Creacionales**. Proveen diferentes mecanismos para crear objetos.
+    - Abstract Factory
+    - Builder
+    - Factory Method
+    - Prototype
+    - Singleton
+- **Estructurales**. Describen formas de componer objetos para formar nuevas estructuras flexibles y eficientes.
+    - Adapter
+    - Bridge
+    - Composite
+    - Decorator
+    - Facade
+    - Flyweight
+    - Proxy
+- **De Comportamiento**. Gestionan algoritmos y responsabilidades entre objetos.
+    - Chain of Responsibility
+    - Command
+    - Interpreter
+    - Iterator
+    - Mediator
+    - Memento
+    - Observer
+    - State
+    - Strategy
+    - Template Method
+    - Visitor
+### Patrón Singleton (Creacional) y Casos de Uso
+Es un patrón que te asegura que una clase solo tiene una instancia. Esta única instancia puede ser consumida por cualquier otro objeto.
+
+
+
 
 
 
