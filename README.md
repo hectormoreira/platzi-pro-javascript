@@ -137,7 +137,29 @@ Parecido a como lo hacen los proxys van a interceptar peticiones para guardar el
 ## TypeScript - Introducción
 **TypeScript** es un superset de JavaScript que añade tipos a nuestras variables ayudando así a la detección de errores de forma temprana y mejorando el autocompletado.
 
+### Tipos básicos
+Tipos:
+- **boolean**. Valor verdadero o falso.
+- **number**. Números.
+- **string**. Cadenas de texto.
+- **string[]**. Arreglo del tipo cadena de texto.
+- **Array**. Arreglo multi-tipo, acepta cadenas de texto o números.
+- **enum**. Es un tipo especial llamado enumeración.
+- **any**. Cualquier tipo.
+- **object**. Del tipo objeto.
+
 Los navegadores no entienden TypeScript así que lo vamos a transpilar a JavaScript usando Parcel.
+### Funciones
+En Typescript podemos ser explícitos con el tipo de los argumentos y el tipo de retorno de una función.
+
+### Interfaces
+Nos permiten declarar la forma exacta de un objeto, definiendo los tipos de sus propiedades y si son opcionales o no.
+
+### Clases
+En las clases en TypeScript sí existen las propiedades privadas.
+
+
+
 
 
 
@@ -151,6 +173,7 @@ npm install -D parcel-bundler
 npm rm live-server
 ```
 
+Borrar caché Parcel
 ```
 rm -rf .cache dist
 ```
