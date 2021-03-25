@@ -1,4 +1,4 @@
-import MediaPlayer from "../../MediaPlayer";
+import MediaPlayer from "../../../mediaplayer/MediaPlayer";
 import Ads, { Ad } from "./Ads";
 
 class AdsPlugin{
@@ -49,7 +49,6 @@ class AdsPlugin{
         setTimeout(() => {
             this.currentAd = null;
             this.adsContainer.innerHTML = '';
-
         }, 10000);
     }
 }

@@ -219,9 +219,17 @@ Añade nuevas responsabilidades a un objeto de forma dinámica permitiendo así 
 ```sh
 npm install -D parcel-bundler
 npm rm live-server
+npm i -D typescript
 ```
 
 Borrar caché Parcel
 ```
 rm -rf .cache dist
+```
+
+Registrarse y publicar en npm
+```
+npm login
+npm whoami
+npm publish --access=public
 ```
