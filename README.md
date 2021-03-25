@@ -196,9 +196,14 @@ El patrón observer se compone de un sujeto que ofrece mecanismos de suscripció
 
 Es uno de los patrones más utilizados, algunos ejemplos típicos son:
 
-Newsletter
-Sockets
-Listeners en páginas web
+- Newsletter
+- Sockets
+- Listeners en páginas web
+
+### Patrón Decorator
+Añade nuevas responsabilidades a un objeto de forma dinámica permitiendo así extender su funcionalidad sin tener que usar subclases.
+
+
 
 
 
